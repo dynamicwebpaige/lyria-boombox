@@ -2,6 +2,44 @@
 
 A beginner-friendly guide to understanding this codebase.
 
+---
+
+## How to Generate Documentation Like This
+
+When asking an LLM to explain a codebase, try these prompts using standard software engineering terminology:
+
+### Quick Prompts
+- "Give me a **system architecture overview** of this codebase"
+- "Create an **architecture diagram** showing the main components"
+- "Explain the **data flow** through the application"
+- "Show me the **component hierarchy** and dependencies"
+- "Document the **event-driven architecture** and message flow"
+
+### Key Terms to Use
+| Term | What It Means |
+|------|---------------|
+| **System Architecture** | High-level structure showing how major pieces connect |
+| **Component Diagram** | Visual breakdown of modules/classes and their relationships |
+| **Data Flow Diagram (DFD)** | How data moves through the system |
+| **Sequence Diagram** | Step-by-step flow of a specific operation over time |
+| **State Machine / State Diagram** | All possible states and transitions (like playback states) |
+| **Dependency Graph** | What depends on what |
+| **Call Graph** | Which functions call which other functions |
+| **Event Flow** | How events propagate through event-driven systems |
+| **Audio Pipeline / Signal Flow** | Specific to audio: how sound data is processed |
+
+### Power Prompt (Comprehensive)
+> "Explain this codebase for a beginner. Include:
+> 1. A **system architecture diagram** showing main components
+> 2. The **component hierarchy** and file structure
+> 3. **Data flow diagrams** for key user interactions
+> 4. Any **state machines** for stateful logic
+> 5. Key **data structures** and their schemas
+>
+> Use ASCII diagrams where helpful."
+
+---
+
 ## What This Project Does
 
 **PromptDJ MIDI** is a virtual retro boombox that generates music in real-time using AI. Think of it as a radio where an AI creates the music on-the-fly based on what genre "station" you tune to.
